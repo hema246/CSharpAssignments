@@ -16,8 +16,8 @@ namespace Calendar
             Console.Write("Enter the  first day week(0=Sunday, 1=Monday..): ");
             int firstDayOfWeek = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("      Calendar  ");
-            Console.WriteLine("S   M   Tu   W   T   F   S");
+            Console.WriteLine("\t\t Calendar  ");
+            Console.WriteLine("S\tM\tTu\tW\tT\tF\tS");
 
             int numOfDaysInMonth;
             if (Month == 2)
@@ -48,12 +48,12 @@ namespace Calendar
                 }
                 else
                 {
-                    Console.Write(" ");
+                    Console.Write("\t");
                 }
             }
             for (int i = 1; i <= numOfDaysInMonth; i++)
             {
-                Console.Write(i);
+                Console.Write(i+"\t");
 
                 if ((firstDayOfWeek + i) % 7 == 0)
 
